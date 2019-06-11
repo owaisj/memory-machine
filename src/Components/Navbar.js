@@ -10,6 +10,9 @@ const styles = {
     },
     title: {
         color: '#302f4d'
+    },
+    scores: {
+        color: 'black'
     }
 }
 
@@ -20,7 +23,7 @@ export default class Navbar extends Component {
                 <div style={styles.title}>
                     Clicky Game
                 </div>
-                <div>
+                <div style={styles.scores}>
                     Score: 0 | Top Score: 0
                 </div>
             </div>   
