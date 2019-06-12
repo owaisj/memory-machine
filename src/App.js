@@ -6,11 +6,12 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    fontFamily: ['IBM Plex Sans', 'sans-serif']
   }
 }
 
-class  App extends Component {
+class App extends Component {
   constructor() {
     super();
     this.state = {

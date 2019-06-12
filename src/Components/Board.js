@@ -5,11 +5,12 @@ const styles = {
         border: '2px solid #b98ea7',
         backgroundColor: '#f5f2d0',
         minHeight: '200px',
-        maxWidth: '900px',
+        maxWidth: '800px',
         marginTop: '1em',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        alignContent: 'center',
         flexWrap: 'wrap',
         padding: '1em'
     }

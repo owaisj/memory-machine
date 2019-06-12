@@ -7,12 +7,15 @@ const styles = {
         backgroundColor: '#f0d3f7',
         color: 'white',
         padding: '1em',
-        minWidth: '95%'
+        minWidth: '90vw'
+        
     },
     title: {
-        color: '#302f4d'
+        color: '#302f4d',
+        fontSize: '2em'
     },
     scores: {
+        alignSelf: 'center',
         color: 'black'
     }
 }
