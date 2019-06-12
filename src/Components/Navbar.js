@@ -24,7 +24,7 @@ export default class Navbar extends Component {
                     Clicky Game
                 </div>
                 <div style={styles.scores}>
-                    Score: 0 | Top Score: 0
+                    Score: {this.props.current} | Top Score: {this.props.top}
                 </div>
             </div>   
         )
