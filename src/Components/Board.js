@@ -18,11 +18,11 @@ const styles = {
 const images = [
     {
         id: 1,
-        url: '/assets/images/murray1.jpg'
+        url: 'assets/images/murray1.jpg'
     },
     {
         id: 2,
-        url: '/assets/images/murray2.jpg'
+        url: 'assets/images/murray2.jpg'
     },
     {
         id: 3,
