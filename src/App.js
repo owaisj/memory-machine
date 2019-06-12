@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 import Navbar from './Components/Navbar'
 import Board from './Components/Board'
 
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  }
+}
+
 class  App extends Component {
   constructor() {
     super();
@@ -19,7 +27,7 @@ class  App extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <Navbar top={this.state.highScore}
           current={this.state.score}
         />
