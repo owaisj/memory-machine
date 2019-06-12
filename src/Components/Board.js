@@ -5,16 +5,17 @@ const styles = {
         border: '2px solid #b98ea7',
         backgroundColor: '#f5f2d0',
         minHeight: '200px',
+        maxWidth: '900px',
         marginTop: '1em',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        flexWrap: 'wrap',
         padding: '1em'
     }
 }
 
-let images = [
-    //TODO: Add more 200x200 images
+const images = [
     {
         id: 1,
         url: '/assets/images/murray1.jpg'
@@ -30,6 +31,26 @@ let images = [
     {
         id: 4,
         url: 'assets/images/murray4.jpg'
+    },
+    {
+        id: 5,
+        url: 'assets/images/murray5.jpg'
+    }, 
+    {
+        id: 6,
+        url: 'assets/images/murray6.jpg'
+    }, 
+    {
+        id: 7,
+        url: 'assets/images/murray7.jpg'
+    }, 
+    {
+        id: 8,
+        url: 'assets/images/murray8.jpg'
+    }, 
+    {
+        id: 9,
+        url: 'assets/images/murray9.jpg'
     }
 ]
 
@@ -50,10 +71,21 @@ export default class Board extends Component {
         }, this.props.grabScore(this.state.highScore, 0))
     }
     handleClick(id) {
+        images.sort(() => Math.random() - 0.5);
         let highScore = this.state.highScore;
         //Correct Guess
         if (this.state.clicked.indexOf(id) === -1) {
             let currentScore = this.state.score + 1;
+            //Check for max
+            if (currentScore === images.length) {
+                alert('You won!');
+                return this.setState({
+                    highScore: images.length
+                }, function(){
+                    this.props.grabScore(4, 0);
+                    this.reset();
+                })
+            }
             //Check for new high score
             if (currentScore > highScore) highScore = currentScore;
             this.setState({
