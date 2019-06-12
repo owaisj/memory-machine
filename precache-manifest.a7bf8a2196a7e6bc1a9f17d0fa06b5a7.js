@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5294b7723314b069b66ec162420530e5",
+    "revision": "c1c2a10c98e5a93cc394451febb59dde",
     "url": "/memory-machine/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/memory-machine/static/js/2.2668f2aa.chunk.js"
   },
   {
-    "revision": "fed550af45dd190741a4",
-    "url": "/memory-machine/static/js/main.4df86edf.chunk.js"
+    "revision": "d93417308b2e8981cc47",
+    "url": "/memory-machine/static/js/main.716d95a2.chunk.js"
   },
   {
     "revision": "2f040e9cc6b7a17e0f0f",
